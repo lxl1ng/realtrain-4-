@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="title">登录</h2>
+        <form method="get" action='/denglu'>
+            <div class="form-group">
+                <label>用户名：<input type="text" name="user" value=""></label><br>
+            </div>
+            <div class="form-group">
+                <label>密码：<input type="password" name="password" value=""></label><br>
+            </div>
+            <a><input type="submit" class="button" value="登录"></a>
+            <a href="{{ url_for('register') }}" class="button">注册</a>
+            <a href="{{ url_for('back_to_home') }}" class="button return-button">返回</a>
+
+        </form>
+{#        <form method="get" action='/login'>#}
+{#            <label>用户名：<input type="text" name="user" value=""></label><br>#}
+{#            <label>密码：<input type="password" name="password" value=""></label><br>#}
+{#            <input type="submit" value="登录">#}
+{#        </form>#}
+
+    </div>
+</body>
+</html>

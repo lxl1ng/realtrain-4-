@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="/static/register.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="title">注册</h2>
+        <form method="get" action='/registuser'>
+{#            <div class="form-group">#}
+{#                <label for="username">用户名:</label>#}
+{#                <input type="text" id="username" name="username" required>#}
+{#            </div>#}
+{#            <div class="form-group">#}
+{#                <label for="password">密码:</label>#}
+{#                <input type="password" id="password" name="password" required>#}
+{#            </div>#}
+{#            <div class="form-group">#}
+{#                <label for="confirmPassword">确认密码:</label>#}
+{#                <input type="password" id="confirmPassword" name="confirmPassword" required>#}
+{#            </div>#}
+{#            <button type="submit" class="button">注册</button>#}
+            <label>用户名：<input type="text" name="user" value=""></label>
+            <label>密码：<input type="password" name="password" value=""></label>
+            <label>邮箱：<input type="password" name="email" value=""></label>
+            <input type="submit" class="button" value="注册">
+            <a href="{{ url_for('login') }}" class="button return-button">返回登录</a>
+        </form>
+
+{#        <form method="get" action='/registuser'>#}
+{#            <label>用户名：<input type="text" name="user" value=""></label>#}
+{#            <label>密码：<input type="password" name="password" value=""></label>#}
+{#            <input type="submit" value="注册">#}
+{#        </form>#}
+
+    </div>
+</body>
+</html>

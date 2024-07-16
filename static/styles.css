@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/img/slider/1.jpg'); /* 请确保文件路径正确 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden; /* 防止出现全局滚动条 */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.85); /* 加深半透明背景 */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-height: 90vh; /* 设置最大高度 */
+    overflow-y: auto; /* 允许滚动 */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 17px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 滚动条样式 */
+.container::-webkit-scrollbar {
+    width: 10px; /* 滚动条宽度 */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #888; /* 滚动条滑块颜色 */
+    border-radius: 5px; /* 滑块圆角 */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 滑块悬停颜色 */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #333; /* 滚动条轨道颜色 */
+}

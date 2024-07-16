@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" xmlns="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+		<!-- all css here -->
+        <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="../static/assets/css/animate.css">
+        <link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../static/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/assets/css/et-line-icon.css">
+        <link rel="stylesheet" href="../static/assets/css/bicon.min.css">
+        <link rel="stylesheet" href="../static/assets/css/slick.css">
+        <link rel="stylesheet" href="../static/assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="../static/assets/css/bundle.css">
+        <link rel="stylesheet" href="../static/assets/css/style.css">
+        <link rel="stylesheet" href="../static/assets/css/responsive.css">
+        <script src="../static/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- header start -->
+		<header class="header-area">
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="logo">
+                                <a href="welcome.html"><img src="../static/assets/img/logo/1.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 hidden-xs">
+                            <div class="main-menu f-right">
+                                <nav>
+                                    <ul>
+                                        <li><a href="{{ url_for('login') }}" >登录</a></li>
+                                        <li><a href="{{ url_for('register') }}" >注册</a></li>
+                                        <li><a href="{{ url_for('back_to_home') }}" >首页</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</header>
+		<!-- header end -->
+		<!-- slider-area start -->
+		<div class="slider-area">
+            <div class="slider-active owl-carousel">
+                <div class="single-slider pb-340 pt-240 bg-img" style="background-image:url(../static/assets/img/slider/1.jpg);" data-overlay="5">
+                    <div class="container">
+                        <div class="slider-text text-center z-index">
+                            <h1 class="animated">智能 <span>答疑</span><span>机器人</span></h1>
+                            <p class="animated">大模型答疑机器人是一种基于深度学习技术的人工智能语言模型，它通过结合不同的大型语言模型并融合海量数据进行训练，以实现对用户问题的准确理解和智能回答。</p>
+                            <a class="button theme-bg animated" href="{{ url_for('login') }}">开始使用</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <!-- slider end -->
+
+        <!-- causes start -->
+        <div class="causes-area pt-120 pb-90">
+            <div class="container">
+                <div class="section-title text-center mb-75">
+                    <h2>大模型+</h2>
+                    <div class="icon-img">
+                        <img src="../static/assets/img/icon-img/1.png" alt="">
+                    </div>
+                    <p>Here are some big models and applications</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-causes mb-30">
+                            <a><img src="../static/assets/img/slider/1.jpg" alt="" /></a>
+                            <div class="causes-info">
+                                <h3><a href="#">WX+</a></h3>
+                                <p>微信+大模型智能聊天机器人</p>
+                                <a class="button theme-bg" href="{{ url_for('admin') }}">尝试使用</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-causes mb-30">
+                            <a><img src="../static/assets/img/slider/2.jpg" alt="" /></a>
+                            <div class="causes-info">
+                                <h3><a href="#">钉钉+</a></h3>
+                                <p>钉钉+大模型智能聊天机器人</p>
+                                <a class="button theme-bg" href="{{ url_for('admin_1') }}">尝试使用</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-causes mb-30">
+                            <a><img src="../static/assets/img/slider/3.jpg" alt="" /></a>
+                            <div class="causes-info">
+                                <h3><a href="#">大模型3</a></h3>
+                                <p>ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于 General Language Model (GLM) 架构，具有 62 亿参数。</p>
+                                <a class="button theme-bg" href="https://github.com/THUDM/ChatGLM-6B">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- causes end -->
+		<!-- all js here -->
+        <script src="../static/assets/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="../static/assets/js/bootstrap.min.js"></script>
+        <script src="../static/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../static/assets/js/isotope.pkgd.min.js"></script>
+        <script src="../static/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="../static/assets/js/jquery.counterup.min.js"></script>
+        <script src="../static/assets/js/waypoints.min.js"></script>
+        <script src="../static/assets/js/ajax-mail.js"></script>
+        <script src="../static/assets/js/owl.carousel.min.js"></script>
+        <script src="../static/assets/js/plugins.js"></script>
+        <script src="../static/assets/js/main.js"></script>
+    </body>
+</html>
+
